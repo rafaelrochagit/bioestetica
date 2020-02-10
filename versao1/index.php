@@ -560,32 +560,32 @@
 							<p><i class="fa fa-mobile-phone"></i> (61) 9 8651-2260 (Enilde)</p>
 							<p><i class="fa fa-mobile-phone"></i> (61) 9 8642-9973 (Nazaré)</p>
 							<p><i class="fa fa-map-marker"></i> CLN 406 Bloco B. Subsolo. Loja 46. Asa Norte. Brasília - DF</p>
-							<p><i class="fa fa-clock-o"></i> Segunda – Quinta 10.00 – 18.00</p>
+							<p><i class="fa fa-clock-o"></i> Segunda à Quinta 10.00 – 18.00</p>
 						</div>
 						
-						<div class="contact-form">
-							<form>
+						<!-- <div class="contact-form">
+							<form id="enviarEmail">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Nome" />
+									<input type="text" class="form-control" name="nome" placeholder="Nome" required/>
 								</div>
 								
 								<div class="form-group">
-									<input type="email" class="form-control" placeholder="Email" />
+									<input type="email" class="form-control" name="email" placeholder="Email" required/>
 								</div>
 								
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Telefone" />
+									<input type="text" class="form-control" name="telefone" placeholder="Telefone" required/>
 								</div>
 								
 								<div class="form-group">
-									<textarea class="form-control" rows="6" placeholder="Mensagem"></textarea>
+									<textarea class="form-control" rows="6" name="mensagem" placeholder="Mensagem" required=""></textarea>
 								</div>
 								
 								<div class="form-group">
 									<input type="submit" class="btn-custom" value="Enviar" />
 								</div>
 							</form>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -670,5 +670,12 @@
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAsdzx6REuLqvQJC9VffvqM_84hUlKbWyM"></script> 
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+
+    <script type="text/javascript">
+    	
+    	$('#enviarEmail').submit(function(){
+    		alert('cheguei submit');
+    	});
+    </script>
 </body>
 </html>
