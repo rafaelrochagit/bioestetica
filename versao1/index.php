@@ -206,8 +206,6 @@
 		                    </li>
 		                    <li data-target="#quote-carousel" data-slide-to="1">
 		                    </li>
-		                    <li data-target="#quote-carousel" data-slide-to="2">
-		                    </li>
 		                </ol>
 
 		                <!-- Carousel Slides / Quotes -->
