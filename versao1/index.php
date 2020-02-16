@@ -60,12 +60,14 @@
 		    text-shadow: none;
 		    margin-top: 0px;
 		}
+		/*		
 		#quote-carousel .carousel-control.left {
 		    left: -60px;
 		}
 		#quote-carousel .carousel-control.right {
 		    right: -60px;
 		}
+		*/
 		#quote-carousel .carousel-indicators {
 		    right: 50%;
 		    top: auto;
@@ -93,7 +95,7 @@
 		    overflow: hidden;
 		}
 		.carousel-inner {
-		    min-height: 300px;
+		    min-height: 200px;
 		}
 		.item blockquote {
 		    border-left: none;
@@ -105,6 +107,35 @@
 		    float: left;
 		    margin-right: 10px;
 		}
+
+        @media(max-width: 1024px) {
+            .carousel-inner {
+                min-height: 220px;
+            }
+
+        }
+
+        @media(max-width: 768px) {
+            .carousel-inner {
+                min-height: 330px;
+            }
+
+            #quote-carousel .carousel-control {
+            	display: none;
+            }
+        }
+
+        @media(max-width: 425px) {
+            .carousel-inner {
+                min-height: 370px;
+            }
+        }
+
+        @media(max-width: 375px) {
+            .carousel-inner {
+                min-height: 430px;
+            }
+        }
 
     	.whatdoyou-box img{
     		width: 280px;
